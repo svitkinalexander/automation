@@ -22,9 +22,9 @@ public class automation4 {
         int dec = ch%100/10;
         int ed = ch%10;
         int sum = sot + dec + ed;
-        System.out.println(sot);
-        System.out.println(dec);
-        System.out.println(ed);
-        System.out.printf("Сумма: %d", sum);
+        System.out.println("Количество сотен:" + sot);
+        System.out.println("Количество десятков:" + dec);
+        System.out.println("Количество едениц:" + ed);
+        System.out.printf("Сумма разрядов: %d", sum);
     }
 }
