@@ -11,20 +11,20 @@ import java.util.Scanner;
 public class automation4 {
     public static void main (String args[]){
         Scanner in = new Scanner(System.in);
-        int ch;
+        int i;
         do {
             System.out.println("Введи 3-х значное число");
-            ch = in.nextInt();
+            i = in.nextInt();
         }
-        while(ch < 100 || ch > 999);
-        System.out.println(ch);
-        int sot = ch/100;
-        int dec = ch%100/10;
-        int ed = ch%10;
-        int sum = sot + dec + ed;
-        System.out.println("Количество сотен:" + sot);
-        System.out.println("Количество десятков:" + dec);
-        System.out.println("Количество едениц:" + ed);
+        while(i < 100 || i > 999);
+        System.out.println(i);
+        int a = i/100;
+        int b = i%100/10;
+        int c = i%10;
+        int sum = a + b + c;
+        System.out.println("Количество сотен:" + a);
+        System.out.println("Количество десятков:" + b);
+        System.out.println("Количество едениц:" + c);
         System.out.printf("Сумма разрядов: %d", sum);
     }
 }
