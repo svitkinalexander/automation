@@ -13,7 +13,7 @@ public class automation7{
 
     static int[] arr = new int[10];
     static int n = arr.length;
-    static double sum;
+    static int sum;
     static double avg;
 
     public static void setArr(){
@@ -23,8 +23,8 @@ public class automation7{
         }
     }
 
-    public static double getSum(int[] arr){
-        double sum = 0;
+    public static int getSum(int[] arr){
+        int sum = 0;
         for(int l : arr){
             sum += l;
         }
@@ -32,7 +32,7 @@ public class automation7{
     }
 
     public static double getAverage(int[] arr){
-        avg = sum / n;
+        avg = (double)sum / n; //reinitialize sum from int to double
         return avg;
     }
 
