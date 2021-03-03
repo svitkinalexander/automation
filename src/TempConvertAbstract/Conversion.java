@@ -18,8 +18,8 @@ public class Conversion{
         KelvinConverter t2 = new KelvinConverter();
         double c = enterValue();
         double a = t1.convert(c);
-        System.out.printf("Температура в Кельвинах %.2f \n", a);
+        System.out.printf("Температура в Фаренгейтах %.2f \n", a);
         double b = t2.convert(c);
-        System.out.printf("Температура в Фаренгейтах %.2f", b);
+        System.out.printf("Температура в Кельвинах %.2f", b);
     }
 }
